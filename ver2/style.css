@@ -1,0 +1,87 @@
+body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Lato', sans-serif; overflow-y: scroll; overflow-x: hidden; }
+
+.topSpace{
+    height:50px;
+}
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]       SPLASH SECTION STYLES        [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+.splashContainer{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 45px);
+    background-image: url(images/splash1.jpg);
+    background-size: 100vw auto;
+}
+.lgLogo{
+    width:1000px;
+    left:0;
+    right:0;
+    position: absolute;
+    top: 75px;
+    margin: 0 auto;
+}
+.lgLogoImg{
+    width: 1000px;
+    height: auto;
+}
+.splashNav{
+    color: rgb(238, 236, 227);
+    background-color: rgb(33, 33, 37);
+    font-size: 28px;
+    width: 100%;
+    height: 45px;
+    position: sticky;
+    top: 0;
+}
+.splashNavText{
+    position: absolute;
+    width: 550px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+}
+a.splashNavLink:link,:visited{
+    color: rgb(238, 236, 227);
+    text-decoration: none;
+}
+a.splashNavLink:hover{
+    color: #af534d;
+    text-decoration: none;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]       GENERAL SECTION STYLES       [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+.generalContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #7a7a7a;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]      SERVICES SECTION STYLES       [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+  .servicesContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #525252;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]        ABOUT SECTION STYLES        [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+  .aboutContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #868686;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]       CONTACT SECTION STYLES       [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+  .contactContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #525252;
+}
