@@ -3,42 +3,54 @@ body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Lato'
 .topSpace{
     height:50px;
 }
+
+.header1{
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+}
+.para1{
+    font-size: 14px;
+}
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
   [][][][][][]       SPLASH SECTION STYLES        [][][][][][][][][]
   [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
 .splashContainer{
     position: relative;
     width: 100%;
-    height: calc(100vh - 45px);
+    height: 255px;
     background-image: url(images/splash1.jpg);
     background-size: 100vw auto;
 }
 .lgLogo{
-    width:1000px;
+    width:750px;
     left:0;
     right:0;
     position: absolute;
-    top: 75px;
+    top: 115px;
     margin: 0 auto;
 }
 .lgLogoImg{
-    width: 1000px;
+    width: 750px;
     height: auto;
 }
 .splashNav{
     color: rgb(238, 236, 227);
     background-color: rgb(33, 33, 37);
-    font-size: 28px;
     width: 100%;
-    height: 45px;
-    position: sticky;
-    top: 0;
+    height: 42px;
+    top:220px;
+    position: absolute;
 }
 .splashNavText{
+    font-size: 28px;
+    color: rgb(238, 236, 227);
     position: absolute;
-    width: 550px;
+    width: 650px;
+    padding-right: 100px;
     left:0;
     right:0;
+    top: 222px;
     margin: 0 auto;
 }
 a.splashNavLink:link,:visited{
@@ -55,33 +67,89 @@ a.splashNavLink:hover{
   [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
 .generalContainer {
     width: 100%;
-    height: 100vh;
-    background-color: #7a7a7a;
+    height: calc(100vh - 255px);
+    background-color: rgb(236, 236, 236);
 }
 
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
   [][][][][][]      SERVICES SECTION STYLES       [][][][][][][][][]
   [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
-  .servicesContainer {
-    width: 100%;
+.servicesContainer {
+    background-color: #dddddd;
+}
+.servicesWrapper{
     height: 100vh;
-    background-color: #525252;
+    display: grid;
+    grid-template-rows: 125px 1fr;
+    grid-template-columns: 1fr 400px 400px 400px 1fr;
+    grid-column-gap: 20px;
+    /*grid-template: 
+        ". servHead servHead servHead ."
+        "serv0 serv1 serv2 serv3 serv4";*/
+}
+.servHead{
+    grid-area:servHead;
+    font-size: 60px;
+    padding-bottom: 25px;
+    padding-top:15px;
+    font-weight: 700;
+    margin:0 auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end:1;
+}
+.serv0{
+    grid-area: serv0;
+}
+.serv1{
+    grid-area: serv1;
+    border-left: solid #4d98af 15px;
+    background-color: #e6e6e6;
+    padding:10px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end:2;
+}
+.serv2{
+    grid-area: serv2;
+    border-left: solid #af534d 15px;
+    background-color: #e6e6e6;
+    padding:10px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:2;
+}
+.serv3{
+    grid-area: serv3;
+    border-left: solid #71af4d 15px;
+    background-color: #e6e6e6;
+    padding:10px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:2;
+}
+.serv4{
+    grid-area: serv4;
 }
 
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
   [][][][][][]        ABOUT SECTION STYLES        [][][][][][][][][]
   [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
-  .aboutContainer {
+.aboutContainer {
     width: 100%;
     height: 100vh;
-    background-color: #868686;
+    background-color: rgb(236, 236, 236);
 }
 
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
   [][][][][][]       CONTACT SECTION STYLES       [][][][][][][][][]
   [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
-  .contactContainer {
+.contactContainer {
     width: 100%;
     height: 100vh;
-    background-color: #525252;
+    background-color: #dddddd;
 }
