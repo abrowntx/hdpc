@@ -1,9 +1,6 @@
 <div class="servicesContainer">
 <a id="services"></a>
     <div class="servicesWrapper">
-        <div class="servHead">
-            Our Services
-        </div>
         <div class="serv0"></div>
         <div class="serv1">
             <div class="header1">Home PC Repair</div>

@@ -1,4 +1,4 @@
-body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Lato', sans-serif; overflow-y: scroll; overflow-x: hidden; }
+body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Poppins', sans-serif; overflow-y: scroll; overflow-x: hidden; }
 
 .topSpace{
     height:50px;
@@ -43,7 +43,7 @@ body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Lato'
     position: absolute;
 }
 .splashNavText{
-    font-size: 28px;
+    font-size: 25px;
     color: rgb(238, 236, 227);
     position: absolute;
     width: 650px;
@@ -69,6 +69,22 @@ a.splashNavLink:hover{
     width: 100%;
     height: calc(100vh - 255px);
     background-color: rgb(236, 236, 236);
+    background-image: url(images/splash2.jpg);
+    background-size: 100vw auto;
+}
+.generalWrapper{
+    width:1200px;
+    height:85%;
+    position: relative;
+    margin: 0 auto;
+}
+.generalTag{
+    width: 1000px;
+    text-align: center;
+    margin:0 auto;
+    position: relative;
+    color: #e3e4de;
+    font-size: 28px;
 }
 
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -80,7 +96,7 @@ a.splashNavLink:hover{
 .servicesWrapper{
     height: 100vh;
     display: grid;
-    grid-template-rows: 125px 1fr;
+    grid-template-rows: 125px 1fr 25px;
     grid-template-columns: 1fr 400px 400px 400px 1fr;
     grid-column-gap: 20px;
     /*grid-template: 
@@ -88,10 +104,14 @@ a.splashNavLink:hover{
         "serv0 serv1 serv2 serv3 serv4";*/
 }
 .servHead{
-    grid-area:servHead;
-    font-size: 60px;
-    padding-bottom: 25px;
-    padding-top:15px;
+    font-family: 'Changa One', cursive;
+    color: #e3e4de;
+    background-color: #af534d;
+    padding:5px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 68px;
     font-weight: 700;
     margin:0 auto;
     grid-column-start: 1;
@@ -114,7 +134,7 @@ a.splashNavLink:hover{
 }
 .serv2{
     grid-area: serv2;
-    border-left: solid #af534d 15px;
+    border-left: solid #71af4d 15px;
     background-color: #e6e6e6;
     padding:10px;
     grid-column-start: 3;
@@ -124,7 +144,7 @@ a.splashNavLink:hover{
 }
 .serv3{
     grid-area: serv3;
-    border-left: solid #71af4d 15px;
+    border-left: solid #af534d 15px;
     background-color: #e6e6e6;
     padding:10px;
     grid-column-start: 4;
