@@ -1,4 +1,4 @@
-body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Poppins', sans-serif; overflow-y: scroll; overflow-x: hidden; }
+body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Montserrat', sans-serif; overflow-y: scroll; overflow-x: hidden; }
 
 .topSpace{
     height:50px;
@@ -84,24 +84,7 @@ a.splashNavLink:hover{
     margin:0 auto;
     position: relative;
     color: #e3e4de;
-    font-size: 28px;
-}
-
-/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-  [][][][][][]      SERVICES SECTION STYLES       [][][][][][][][][]
-  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
-.servicesContainer {
-    background-color: #dddddd;
-}
-.servicesWrapper{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 125px 1fr 25px;
-    grid-template-columns: 1fr 400px 400px 400px 1fr;
-    grid-column-gap: 20px;
-    /*grid-template: 
-        ". servHead servHead servHead ."
-        "serv0 serv1 serv2 serv3 serv4";*/
+    font-size: 36px;
 }
 .servHead{
     font-family: 'Changa One', cursive;
@@ -113,47 +96,102 @@ a.splashNavLink:hover{
     left: 10px;
     font-size: 68px;
     font-weight: 700;
+    height: 75px;
     margin:0 auto;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end:1;
 }
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]      SERVICES SECTION STYLES       [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+.servicesContainer {
+    background-color: #dddddd;
+}
+.servicesWrapper{
+    height: calc(100vh - 90px);
+    display: grid;
+    grid-template-rows: 25px 1fr 250px;
+    grid-template-columns: 1fr 400px 400px 400px 1fr;
+    grid-column-gap: 20px;
+    /*grid-template: 
+        ". servHead servHead servHead ."
+        "serv0 serv1 serv2 serv3 serv4";*/
+}
 .serv0{
     grid-area: serv0;
 }
 .serv1{
     grid-area: serv1;
-    border-left: solid #4d98af 15px;
-    background-color: #e6e6e6;
+    border-left: solid #b17f54 15px;
     padding:10px;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end:2;
+    position: relative;
 }
 .serv2{
     grid-area: serv2;
-    border-left: solid #71af4d 15px;
-    background-color: #e6e6e6;
+    border-left: solid #5aa370 15px;
     padding:10px;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end:2;
+    position: relative;
 }
 .serv3{
     grid-area: serv3;
-    border-left: solid #af534d 15px;
-    background-color: #e6e6e6;
+    border-left: solid #b35851 15px;
     padding:10px;
     grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end:2;
+    position: relative;
 }
 .serv4{
     grid-area: serv4;
+}
+.servicesPrice{
+    background-color: #b17f54;
+    position:absolute;
+    bottom:0px;
+    width:225px;
+    height:42px;
+    left:20px;
+}
+.servicesPrice2{
+    background-color: #5aa370;
+    position:absolute;
+    bottom:0px;
+    width:225px;
+    height:42px;
+    left:20px;
+}
+.servicesPrice3{
+    background-color: #b35851;
+    position:absolute;
+    bottom:0px;
+    width:225px;
+    height:42px;
+    left:20px;
+}
+.servicesPriceP{
+    font-size: 20px;
+    top:-14px;
+    padding-left:20px;
+    right:10px;
+    position: absolute;
+    color: #e3e4de;
+    font-weight:500;
+}
+ul li{
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -170,6 +208,65 @@ a.splashNavLink:hover{
   [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
 .contactContainer {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 250px);
     background-color: #dddddd;
+}
+.contactWrap{
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+.input1{
+    width: 500px;
+    height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    position: relative;
+    padding: 5px;
+    margin: 10px;
+    margin-left:125px;
+}
+.input1-1{
+    width: 700px;
+    height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    padding: 5px;
+    margin: 10px;
+}
+.input2{
+    width:700px;
+    height:250px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    margin: 10px;
+}
+.button{
+    width:165px;
+    height:40px;
+    background-color: #b35851;
+    border: #b35851 1px solid;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin: 10px;
+    margin-left:545px;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]        FOOTER SECTION STYLES       [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+.footerContainer{
+    height: 250px;
+    text-align: center;
+    font-size: 14px;
+    padding-top:10px;
+}
+.footerP1{
+    font-size: 17px;
+}
+.footerContainer A{
+    color: rgb(38, 38, 73);
+    font-weight: 900;
 }
