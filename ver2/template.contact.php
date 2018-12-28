@@ -1,5 +1,4 @@
 <div class="contactContainer">
-    <a id="contact"></a>
     <div class="contactWrap"> 
         <form action="">
             <input type="text" placeholder="Your Name" class="input1">

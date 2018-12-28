@@ -1,16 +1,18 @@
-body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Montserrat', sans-serif; overflow-y: scroll; overflow-x: hidden; }
+body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Montserrat', sans-serif; overflow-y: scroll; overflow-x: hidden; width: 100% }
 
-.topSpace{
-    height:50px;
-}
 
 .header1{
-    font-size: 28px;
-    font-weight: 700;
-    font-style: italic;
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
 }
 .para1{
     font-size: 14px;
+}
+.arrow{
+    width: 60px;
+    height: auto;
 }
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
   [][][][][][]       SPLASH SECTION STYLES        [][][][][][][][][]
@@ -21,37 +23,35 @@ body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Monts
     height: 255px;
     background-image: url(images/splash1.jpg);
     background-size: 100vw auto;
+    background-position: center;
 }
 .lgLogo{
-    width:750px;
-    left:0;
-    right:0;
+    width:95%;
+    left:2.5%;
     position: absolute;
-    top: 115px;
+    top: 120px;
     margin: 0 auto;
 }
 .lgLogoImg{
-    width: 750px;
+    width: 100%;
     height: auto;
 }
 .splashNav{
     color: rgb(238, 236, 227);
     background-color: rgb(33, 33, 37);
     width: 100%;
-    height: 42px;
-    top:220px;
+    height: 55px;
+    top:250px;
     position: absolute;
 }
 .splashNavText{
-    font-size: 25px;
+    font-size: 32px;
     color: rgb(238, 236, 227);
+    visibility: hidden;
     position: absolute;
-    width: 650px;
-    padding-right: 100px;
-    left:0;
+    left:15;
     right:0;
-    top: 222px;
-    margin: 0 auto;
+    top: 190px;
 }
 a.splashNavLink:link,:visited{
     color: rgb(238, 236, 227);
@@ -70,33 +70,36 @@ a.splashNavLink:hover{
     height: calc(100vh - 255px);
     background-color: rgb(236, 236, 236);
     background-image: url(images/splash2.jpg);
-    background-size: 100vw auto;
+    background-size: cover;
 }
 .generalWrapper{
-    width:1200px;
+    width:100%;
     height:85%;
     position: relative;
     margin: 0 auto;
 }
 .generalTag{
-    width: 1000px;
+    width: 100%;
+    top: 265px;
     text-align: center;
     margin:0 auto;
     position: relative;
     color: #e3e4de;
-    font-size: 36px;
+    font-size: 56px;
+    filter: drop-shadow(3px 3px 2px #00000079);
+    line-height: 80px;
 }
 .servHead{
     font-family: 'Changa One', cursive;
     color: #e3e4de;
-    background-color: #af534d;
+    background-color: #5aa370;
     padding:5px;
     position: absolute;
-    bottom: 5px;
-    left: 10px;
-    font-size: 68px;
+    top: 60%;
+    left: 50px;
+    font-size: 90px;
     font-weight: 700;
-    height: 75px;
+    height: 95px;
     margin:0 auto;
     grid-column-start: 1;
     grid-column-end: 5;
@@ -111,87 +114,59 @@ a.splashNavLink:hover{
     background-color: #dddddd;
 }
 .servicesWrapper{
-    height: calc(100vh - 90px);
-    display: grid;
-    grid-template-rows: 25px 1fr 250px;
-    grid-template-columns: 1fr 400px 400px 400px 1fr;
-    grid-column-gap: 20px;
-    /*grid-template: 
-        ". servHead servHead servHead ."
-        "serv0 serv1 serv2 serv3 serv4";*/
+    height: auto;
 }
-.serv0{
-    grid-area: serv0;
-}
-.serv1{
-    grid-area: serv1;
-    border-left: solid #b17f54 15px;
-    padding:10px;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end:2;
+.servImg{
+    width:80%;
+    height: auto;
     position: relative;
+    left:10%;
+}
+.serv0{ height:0px; }
+.serv1{
+    border-left: solid #b17f54 15px;
+    width:100%
 }
 .serv2{
-    grid-area: serv2;
     border-left: solid #5aa370 15px;
-    padding:10px;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end:2;
-    position: relative;
 }
 .serv3{
-    grid-area: serv3;
     border-left: solid #b35851 15px;
-    padding:10px;
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end:2;
-    position: relative;
 }
-.serv4{
-    grid-area: serv4;
-}
+.serv4{ height:0px; }
 .servicesPrice{
     background-color: #b17f54;
-    position:absolute;
-    bottom:0px;
-    width:225px;
-    height:42px;
-    left:20px;
+    position: relative;
+    width:100%;
+    height:65px;
 }
 .servicesPrice2{
     background-color: #5aa370;
-    position:absolute;
-    bottom:0px;
-    width:225px;
-    height:42px;
-    left:20px;
+    position: relative;
+    width:100%;
+    height:65px;
 }
 .servicesPrice3{
     background-color: #b35851;
-    position:absolute;
-    bottom:0px;
-    width:225px;
-    height:42px;
-    left:20px;
+    position: relative;
+    width:100%;
+    height:65px;
 }
 .servicesPriceP{
-    font-size: 20px;
-    top:-14px;
-    padding-left:20px;
-    right:10px;
-    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
     color: #e3e4de;
     font-weight:500;
 }
+ul{
+    list-style-position: inside;
+}
 ul li{
-    padding-top:5px;
-    padding-bottom:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    font-size: 20px;
+    text-align: center;
 }
 
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -199,8 +174,25 @@ ul li{
   [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
 .aboutContainer {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     background-color: rgb(236, 236, 236);
+}
+.aboutHead{
+    font-family: 'Changa One', cursive;
+    color: #e3e4de;
+    background-color: #b17f54;
+    padding:5px;
+    position: absolute;
+    top: 70%;
+    right: 50px;
+    font-size: 90px;
+    font-weight: 700;
+    height: 95px;
+    margin:0 auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end:1;
 }
 
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -212,46 +204,56 @@ ul li{
     background-color: #dddddd;
 }
 .contactWrap{
-    width: 750px;
-    margin: 0 auto;
+    width: 100%;
     position: relative;
 }
 .input1{
-    width: 500px;
-    height: 45px;
+    width: 100%;
+    height: 60px;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     position: relative;
-    padding: 5px;
-    margin: 10px;
-    margin-left:125px;
 }
 .input1-1{
-    width: 700px;
-    height: 45px;
+    width: 100%;
+    height: 60px;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
-    padding: 5px;
-    margin: 10px;
 }
 .input2{
-    width:700px;
-    height:250px;
+    width: 100%;
+    height:500px;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
-    padding: 5px;
-    margin: 10px;
 }
 .button{
     width:165px;
     height:40px;
     background-color: #b35851;
     border: #b35851 1px solid;
+    color: white;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    margin: 10px;
-    margin-left:545px;
+    margin: 5px;
+    margin-left:440px;
+}
+.contactHead{
+    font-family: 'Changa One', cursive;
+    color: #e3e4de;
+    background-color: #af534d;
+    padding:5px;
+    position: absolute;
+    top: 80%;
+    left: 50px;
+    font-size: 90px;
+    font-weight: 700;
+    height: 95px;
+    margin:0 auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end:1;
 }
 
 /*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -260,11 +262,29 @@ ul li{
 .footerContainer{
     height: 250px;
     text-align: center;
-    font-size: 14px;
+    font-size: 26px;
     padding-top:10px;
 }
+.footerWrapper{
+    display: grid;
+    width: 70%;
+    position: relative;
+    margin:0 auto;
+    grid-template-columns: 1fr 40% 60% 1fr;
+    /*grid-template: 
+        ". servHead servHead servHead ."
+        "serv0 serv1 serv2 serv3 serv4";*/
+}
+.ft1{
+    width:300px;
+    text-align: left;
+}
+.ft2{
+    width:700px;
+    text-align: left;
+}
 .footerP1{
-    font-size: 17px;
+    font-size: 26px;
 }
 .footerContainer A{
     color: rgb(38, 38, 73);

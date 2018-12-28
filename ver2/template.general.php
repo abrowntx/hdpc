@@ -1,3 +1,4 @@
+
 <div class="generalContainer">
     
     <div class="topSpace"></div>
@@ -8,7 +9,7 @@
     </div>
     <a id="services"></a>
     <div class="servHead">
-        <a href="#services"><img src="images/down.png" alt="" style="height:50px;width:auto;"></a>
+        <a href="#services"><img src="images/down.png" alt="v" class="arrow"></a>
         OUR SERVICES
     </div>
 </div>

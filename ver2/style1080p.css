@@ -1,0 +1,329 @@
+body { background-color: #B9C2C9; margin: 0px; padding: 0px; font-family: 'Montserrat', sans-serif; overflow-y: scroll; overflow-x: hidden; }
+
+.topSpace{
+    height:50px;
+}
+
+.header1{
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Karla', sans-serif;
+}
+.para1{
+    font-size: 14px;
+}
+.arrow{
+    width: 45px;
+    height: auto;
+}
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]       SPLASH SECTION STYLES        [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+.splashContainer{
+    position: relative;
+    width: 100%;
+    height: 255px;
+    background-image: url(images/splash1.jpg);
+    background-size: 100vw auto;
+}
+.lgLogo{
+    width:750px;
+    left:0;
+    right:0;
+    position: absolute;
+    top: 115px;
+    margin: 0 auto;
+}
+.lgLogoImg{
+    width: 750px;
+    height: auto;
+}
+.splashNav{
+    color: rgb(238, 236, 227);
+    background-color: rgb(33, 33, 37);
+    width: 100%;
+    height: 42px;
+    top:220px;
+    position: absolute;
+}
+.splashNavText{
+    font-size: 25px;
+    color: rgb(238, 236, 227);
+    position: absolute;
+    width: 650px;
+    padding-right: 100px;
+    left:0;
+    right:0;
+    top: 222px;
+    margin: 0 auto;
+}
+a.splashNavLink:link,:visited{
+    color: rgb(238, 236, 227);
+    text-decoration: none;
+}
+a.splashNavLink:hover{
+    color: #af534d;
+    text-decoration: none;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]       GENERAL SECTION STYLES       [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+.generalContainer {
+    width: 100%;
+    height: calc(100vh - 255px);
+    background-color: rgb(236, 236, 236);
+    background-image: url(images/splash2.jpg);
+    background-size: 100vw auto;
+}
+.generalWrapper{
+    width:1200px;
+    height:85%;
+    position: relative;
+    margin: 0 auto;
+}
+.generalTag{
+    width: 1000px;
+    text-align: center;
+    margin:0 auto;
+    position: relative;
+    color: #e3e4de;
+    font-size: 36px;
+}
+.servHead{
+    font-family: 'Changa One', cursive;
+    color: #e3e4de;
+    background-color: #5aa370;
+    padding:5px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 68px;
+    font-weight: 700;
+    height: 75px;
+    margin:0 auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end:1;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]      SERVICES SECTION STYLES       [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+.servicesContainer {
+    background-color: #dddddd;
+}
+.servicesWrapper{
+    height: calc(100vh - 90px);
+    display: grid;
+    grid-template-rows: 25px 1fr 250px;
+    grid-template-columns: 1fr 400px 400px 400px 1fr;
+    grid-column-gap: 20px;
+    /*grid-template: 
+        ". servHead servHead servHead ."
+        "serv0 serv1 serv2 serv3 serv4";*/
+}
+.serv0{
+    grid-area: serv0;
+}
+.serv1{
+    grid-area: serv1;
+    border-left: solid #b17f54 15px;
+    padding:10px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end:2;
+    position: relative;
+}
+.serv2{
+    grid-area: serv2;
+    border-left: solid #5aa370 15px;
+    padding:10px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:2;
+    position: relative;
+}
+.serv3{
+    grid-area: serv3;
+    border-left: solid #b35851 15px;
+    padding:10px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:2;
+    position: relative;
+}
+.serv4{
+    grid-area: serv4;
+}
+.servicesPrice{
+    background-color: #b17f54;
+    position:absolute;
+    bottom:0px;
+    width:225px;
+    height:42px;
+    left:20px;
+}
+.servicesPrice2{
+    background-color: #5aa370;
+    position:absolute;
+    bottom:0px;
+    width:225px;
+    height:42px;
+    left:20px;
+}
+.servicesPrice3{
+    background-color: #b35851;
+    position:absolute;
+    bottom:0px;
+    width:225px;
+    height:42px;
+    left:20px;
+}
+.servicesPriceP{
+    font-size: 20px;
+    top:-14px;
+    padding-left:20px;
+    right:10px;
+    position: absolute;
+    color: #e3e4de;
+    font-weight:500;
+}
+ul li{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]        ABOUT SECTION STYLES        [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+.aboutContainer {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: rgb(236, 236, 236);
+}
+.aboutHead{
+    font-family: 'Changa One', cursive;
+    color: #e3e4de;
+    background-color: #b17f54;
+    padding:5px;
+    position: absolute;
+    top: calc(200vh - 180px);
+    right: 10px;
+    font-size: 68px;
+    font-weight: 700;
+    height: 75px;
+    margin:0 auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end:1;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]       CONTACT SECTION STYLES       [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+.contactContainer {
+    width: 100%;
+    height: calc(100vh - 275px);
+    background-color: #dddddd;
+}
+.contactWrap{
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+.input1{
+    width: 500px;
+    height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    position: relative;
+    padding: 5px;
+    margin: 10px;
+    margin-left:125px;
+}
+.input1-1{
+    width: 700px;
+    height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    padding: 5px;
+    margin: 10px;
+}
+.input2{
+    width:700px;
+    height:250px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    margin: 10px;
+}
+.button{
+    width:165px;
+    height:40px;
+    background-color: #b35851;
+    border: #b35851 1px solid;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin: 10px;
+    margin-left:545px;
+}
+.contactHead{
+    font-family: 'Changa One', cursive;
+    color: #e3e4de;
+    background-color: #af534d;
+    padding:5px;
+    position: absolute;
+    top: calc(300vh - 260px);
+    left: 10px;
+    font-size: 68px;
+    font-weight: 700;
+    height: 75px;
+    margin:0 auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end:1;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  [][][][][][]        FOOTER SECTION STYLES       [][][][][][][][][]
+  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]*/
+  .footerContainer{
+    height: 175px;
+    text-align: center;
+    font-size: 14px;
+    padding-top:10px;
+}
+.footerWrapper{
+    display: grid;
+    width: 400px;
+    position: relative;
+    margin:0 auto;
+    grid-template-columns: 1fr 400px 200px 1fr;
+    /*grid-template: 
+        ". servHead servHead servHead ."
+        "serv0 serv1 serv2 serv3 serv4";*/
+}
+.ft1{
+    width:175px;
+    text-align: left;
+}
+.ft2{
+    width:225px;
+    text-align: left;
+}
+.footerP1{
+    font-size: 17px;
+}
+.footerContainer A{
+    color: rgb(38, 38, 73);
+    font-weight: 900;
+}

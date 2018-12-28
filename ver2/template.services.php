@@ -1,8 +1,9 @@
+
 <div class="servicesContainer">
     <div class="servicesWrapper">
         <div class="serv0"></div>
         <div class="serv1">
-            <img src="images/icon_repair.png" alt="">
+            <img src="images/icon_repair.png" alt="" class="servImg">
             <br>
             <div class="header1">Home PC Repair</div>
             <ul>
@@ -18,7 +19,7 @@
             </div>
         </div>
         <div class="serv2">
-            <img src="images/icon_business.png" alt="">
+            <img src="images/icon_business.png" alt="" class="servImg">
             <br>
             <div class="header1">Business IT Services</div>
             <ul>
@@ -32,7 +33,7 @@
             </div>
         </div>
         <div class="serv3">
-            <img src="images/icon_cloud.png" alt="">
+            <img src="images/icon_cloud.png" alt="" class="servImg">
             <br>
             <div class="header1">Cloud Backup</div>
                 <ul>
@@ -46,5 +47,10 @@
             </div>
         </div>
         <div class="serv4"></div>
+    </div>
+    <a id="about"></a>
+    <div class="aboutHead">
+        <a href="#about"><img src="images/down.png" alt="" class="arrow"></a>
+        ABOUT HDPC
     </div>
 </div>
