@@ -237,42 +237,45 @@ ul li{
     margin: 0 auto;
     position: relative;
 }
+.contactText{
+    margin-left:250px;
+}
 .input1{
     width: 500px;
-    height: 45px;
+    height: 35px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     position: relative;
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
     margin-left:125px;
 }
 .input1-1{
     width: 700px;
-    height: 45px;
+    height: 35px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
 }
 .input2{
     width:700px;
-    height:250px;
-    font-size: 22px;
+    height:230px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
 }
 .button{
     width:165px;
-    height:40px;
+    height:35px;
     background-color: #b35851;
     border: #b35851 1px solid;
     color: white;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    margin: 10px;
+    margin: 5px;
     margin-left:545px;
 }
 .contactHead{
