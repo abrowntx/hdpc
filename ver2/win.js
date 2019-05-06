@@ -4,10 +4,10 @@ $(document).ready(function() {
     function checkWidth() {
         var windowsize = $window.width();
         if (windowsize < 979) {
-            $('#changedataplacement').Attr('data-placement','right');
+            $('#changedataplacement').attr('data-placement','right');
         }  
         else {  
-            $('#changedataplacement').Attr('data-placement','left'); 
+            $('#changedataplacement').attr('data-placement','left'); 
         } 
     }
     // Execute on load
